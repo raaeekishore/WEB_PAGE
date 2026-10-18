@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="form-column" id="register">
+            <div class="heading">
+                <h3>Register for DevFest</h3>
+                <p class="sub-heading">Complete the form below.</p>
+                
+                <form id="registration-form" onsubmit="handleRegistration(event)">
+                    <div class="form-group">
+                        <label for="full name">Full Name</label>
+                        <input type="text" id="full name" required placeholder="Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="track">Preferred Track</label>
+                        <select id="track" required>
+                            <option value="" disabled selected>Select a track</option>
+                            <option value="ai-cloud">AI & ML</option>
+                            <option value="web-mobile">Web & App Development</option>
+                            <option value="design-ux">UI/UX Design</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Complete Registration</button>
+                </form>
+                
+                <div id="success-message" class="success-message hidden">
+                    Registration successful! Please check your email for further details.
+                </div>
+            </div>
+    </section>
+</body>
+</html>
